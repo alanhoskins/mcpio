@@ -1,4 +1,13 @@
-import { nextJsConfig } from "@repo/eslint-config/next-js";
-
 /** @type {import("eslint").Linter.Config} */
-export default nextJsConfig;
+export default {
+	$schema: 'https://json.schemastore.org/tsconfig',
+	extends: './base.json',
+	compilerOptions: {
+		plugins: [{ name: 'next' }],
+		module: 'ESNext',
+		moduleResolution: 'Bundler',
+		allowJs: true,
+		jsx: 'preserve',
+		noEmit: true,
+	},
+};
