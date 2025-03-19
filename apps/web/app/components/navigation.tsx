@@ -42,7 +42,7 @@ export default function Navigation() {
 
 				<SignedOut>
 					<SignInButton mode="modal">
-						<button className="border-primary bg-secondary hover:bg-primary hover:text-secondary border px-4 py-2 uppercase transition-colors">
+						<button className="border-secondary bg-primary hover:bg-secondary hover:text-primary border px-4 py-2 uppercase transition-colors">
 							Sign In
 						</button>
 					</SignInButton>
