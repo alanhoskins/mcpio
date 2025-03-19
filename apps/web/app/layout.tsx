@@ -32,9 +32,7 @@ export default function RootLayout({
 	return (
 		<ClerkProvider>
 			<html lang="en">
-				<body
-					className={`${geistSans.variable} ${geistMono.variable} bg-gray-50`}
-				>
+				<body className={`${geistSans.variable} ${geistMono.variable}`}>
 					<div className="flex min-h-screen flex-col">
 						<Navigation />
 						<main className="flex-1">{children}</main>

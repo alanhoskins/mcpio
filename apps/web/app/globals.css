@@ -1,1 +1,12 @@
 @import 'tailwindcss';
+
+html {
+	font-family: 'Consolas', monospace;
+}
+
+@theme {
+	--color-primary: #000000;
+	--color-secondary: #ffffff;
+
+	--ease-brutalist: cubic-bezier(0.2, 0, 0, 1);
+}

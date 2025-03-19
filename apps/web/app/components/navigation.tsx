@@ -8,9 +8,9 @@ export default function Navigation() {
 	const pathname = usePathname();
 
 	return (
-		<header className="flex items-center justify-between border-b p-4">
+		<header className="border-secondary bg-primary text-secondary flex items-center justify-between border-b p-4">
 			<div className="flex items-center">
-				<Link href="/" className="text-2xl font-bold">
+				<Link href="/" className="text-2xl uppercase tracking-wider">
 					mcpio
 				</Link>
 
@@ -20,10 +20,10 @@ export default function Navigation() {
 							<li>
 								<Link
 									href="/dashboard"
-									className={`rounded px-3 py-2 transition-colors ${
+									className={`px-4 py-2 uppercase transition-colors ${
 										pathname === '/dashboard'
-											? 'bg-blue-100 text-blue-800'
-											: 'hover:bg-gray-100'
+											? 'bg-primary text-secondary'
+											: 'hover:bg-primary hover:text-secondary'
 									}`}
 								>
 									Dashboard
@@ -42,13 +42,13 @@ export default function Navigation() {
 
 				<SignedOut>
 					<SignInButton mode="modal">
-						<button className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">
+						<button className="border-primary bg-secondary hover:bg-primary hover:text-secondary border px-4 py-2 uppercase transition-colors">
 							Sign In
 						</button>
 					</SignInButton>
 					<Link
 						href="/sign-up"
-						className="rounded border border-blue-500 px-4 py-2 text-blue-500 hover:bg-blue-50"
+						className="border-primary bg-primary text-secondary hover:bg-secondary hover:text-primary border px-4 py-2 uppercase transition-colors"
 					>
 						Sign Up
 					</Link>
