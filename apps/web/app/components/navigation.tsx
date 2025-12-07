@@ -29,7 +29,6 @@ export default function Navigation() {
 									Dashboard
 								</Link>
 							</li>
-							{/* Add more navigation items here */}
 						</ul>
 					</nav>
 				</SignedIn>
